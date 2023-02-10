@@ -1,0 +1,41 @@
+.hero-img
+{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 60vh;
+    position: relative;
+}
+.hero-img::before{
+    content: '';
+    background: url("https://img.freepik.com/free-photo/closeup-developer-hands-typing-code-keyboard-while-looking-computer-screens-with-programming-interface-software-programmer-sitting-desk-with-clipboard-writing-algorithm_482257-33551.jpg?w=1380&t=st=1673372701~exp=1673373301~hmac=2c08c5e1460896e0c834d35a470e0f625004eb5b160126bbef3de2e82d18607c");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img h1{
+    font-size: 2.4rem;
+
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:640px){
+    .hero-img h1{
+        font-size: 2rem;
+    }
+}
